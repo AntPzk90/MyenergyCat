@@ -1,0 +1,133 @@
+.functional-nutrition{
+	background-image: url("../imgs/moby/index-background-mobile.png");
+	background-repeat: no-repeat;
+	background-size: 100% 306px;
+	background-position: 0 0;
+	text-align: center;
+	color: #fff;
+}
+.functional-nutrition__wrapper{
+	display: flex;
+	flex-direction: column;
+}
+.functional-nutrition__title{
+	font-size: 36px;
+	line-height: 36px;
+	color: inherit;
+}
+.functional-nutrition-img__wrapper{
+	width: 100%;
+	height: 270px;
+	margin-top: 20px;
+}
+.functional-nutrition__img{
+	display: none;
+}
+.functional-nutrition__img-tab{
+	display: none;
+}
+.btn{
+	background-color: #68b738;
+	text-align: center;
+	font-size: 14px;
+	line-height: 18px;
+	font-weight: 400;
+	padding-top: 11px;
+	padding-bottom: 11px;
+	text-transform: uppercase;
+	text-decoration: none;
+	color: inherit;
+}
+.btn:hover{
+	background-color:darken(@green; 5%)
+}
+.btn:active,
+.btn:focus{
+	background-color:darken(@green; 5%);
+	color:rgba(255, 255, 255, 0.4);
+}
+.functional-nutrition__slogan{
+	text-transform: uppercase;
+	color:inherit;
+	font-size: 14px;
+	line-height: 14px;
+}
+.functional-nutrition__btn{
+	display: block;
+	width: 100%;
+	align-self: flex-end;
+	order: 4;
+}
+@media all and (min-width: 768px){
+	.functional-nutrition{
+		background-image: none;
+		text-align: left;
+		color: #fff;
+		min-height: 845px;
+	}
+	.functional-nutrition__wrapper{
+		box-sizing: border-box;
+		padding: 0 90px;
+		position: relative;
+	}
+	.functional-nutrition__title{
+		font-size: 60px;
+		line-height: 60px;
+		color: #111111;
+		width: 420px;
+		margin-bottom: 40px;
+	}
+	.functional-nutrition__slogan{
+		font-size: 20px;
+		line-height: 20px;
+		color: #111111;
+		margin-bottom: 48px;
+	}
+	.functional-nutrition-img__wrapper{
+		position: absolute;
+		width: 709px;
+		height: 609px;
+		top: 240px;
+		left: 50%;
+		margin-left: -355px;
+		z-index: -1;
+	}
+	.functional-nutrition__img-tab{
+		display: inline;
+	}
+
+	.functional-nutrition__img-moby{
+		display: none;
+	}
+	.functional-nutrition__btn{
+		width: 245px;
+		align-self: flex-start;
+	}
+}
+
+@media all and (min-width: 1200px){
+	.functional-nutrition{
+		min-height: 530px;
+		margin-bottom: 75px;
+	}
+	.functional-nutrition-img__wrapper{
+		width: 522px;
+		height: 499px;
+		top: 0px;
+		left: 450px;
+		margin-left: 0px;
+		z-index: 2;
+	}
+	.functional-nutrition__img-tab{
+		display: none;
+	}
+	.functional-nutrition__img{
+		display: inline;
+	}
+	.btn{
+		font-size: 20px;
+		line-height: 24px;
+		padding-top: 16px;
+		padding-bottom: 15px;
+	}
+}

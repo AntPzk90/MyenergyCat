@@ -1,0 +1,510 @@
+.big-title__wrapper{
+	padding-top: 30px;
+}
+.selection__form{
+	text-transform: uppercase;
+}
+/* блок с заголовком */
+.selection__program-title{
+	font-size: 36px;
+	line-height: 36px;
+	margin-bottom: 40px;
+}
+.selection-dscr{
+	text-transform: uppercase;
+	font-size: 14px;
+	line-height: 18px;
+	display: inline-block;
+	margin-bottom: 35px;
+}
+/* блок с данными кота */
+.personal-cat-info{
+	border-top: none;
+	margin-bottom:0px;
+}
+.cat-info__list{
+	box-sizing: border-box;
+	padding: 0 20px;
+	margin: 0;
+	width: 100%;
+	min-height: 186px;
+}
+.info__list-item{
+	display: flex;
+	justify-content: space-between;
+	margin-bottom: 14px;
+}
+.pers-dat__label{
+	margin-right:15px;
+	font-size: 16px;
+	line-height: 18px;
+	padding-top: 14px;
+	padding-bottom: 13px;
+	text-transform: uppercase;
+}
+.pers-dat__input{
+	flex-grow: 1;
+	font-size: 16px;
+	line-height: 18px;
+	padding-top: 14px;
+	padding-bottom: 13px;
+	border: 1px solid #e6e6e6;
+}
+/* блок с выбором направления */
+.personal-cat-vector{
+	border-top: none;
+}
+.cat-data__radio-wrapper{
+	border-top: 1px solid #e6e6e6;
+	border-bottom: 1px solid #e6e6e6;
+}
+.vector__list{
+	margin:21px 0;
+	padding: 20px;
+}
+.vector__list-item{
+	margin-bottom: 12px;
+	padding-left: 45px;
+	position: relative;
+	height: 30px;
+	box-sizing: border-box;
+	padding-top: 8px;
+}
+.vector__input{
+	position: absolute;
+  	z-index: -1;
+  	opacity: 0;
+  	margin: 10px 0 0 7px;
+}
+.vector__label::before{
+	content: "";
+	width: 30px;
+	height: 30px;
+	display: block;
+	border-radius:50%;
+	position: absolute;
+	top:0;
+	left: 0;
+	border:2px solid #e6e6e6;
+}
+.vector__label:hover::before{
+	border:2px solid #cdcdcd;
+}
+.vector__input + .vector__label{
+	cursor: pointer;
+}
+.vector__input:checked + .vector__label::after{
+	content: "";
+	width: 14px;
+	height: 14px;
+	display: block;
+	border-radius:50%;
+	position: absolute;
+	top:10px;
+	left: 10px;
+	background-color: @green;
+}
+.vector__label:active,
+.vector__label:focus{
+	opacity: 0.6;
+}
+/* данные владельца кота */
+.personal-owner__mini-title{
+	margin-bottom: 25px;
+}
+.owner__list{
+	margin: 0;
+	padding: 0;
+	width: 100%;
+}
+.owner__list-item{
+	display: flex;
+	justify-content: space-between;
+	margin-bottom: 15px;
+}
+.owner__list-item:last-child{
+	margin-bottom: 0;
+}
+.owner-label{
+	margin-right:15px;
+	font-size: 16px;
+	line-height: 18px;
+	padding-top: 14px;
+	padding-bottom: 13px;
+}
+.owner-input{
+	flex-grow: 1;
+	font-size: 16px;
+	line-height: 18px;
+	padding-top: 14px;
+	padding-bottom: 13px;
+}
+/* комментарии */
+.comments-field{
+	width: 100%;
+	height: 150px;
+	border: 1px solid #e6e6e6;
+	resize: none;
+	box-sizing: border-box;
+	padding: 20px;
+}
+.comments-data__mini-title{
+	margin-bottom: 25px;
+}
+/* дополнительно */
+.additionally-data__mini-title{
+	margin-bottom: 25px;
+}
+.additionally__list{
+	margin: 0;
+	padding: 0;
+}
+.additionally__list-item{
+	margin-bottom: 12px;
+	position: relative;
+	box-sizing: border-box;
+	padding-left: 45px;
+	height: 30px;
+	box-sizing: border-box;
+	padding-top: 8px;
+}
+.additionally__list-item:last-child{
+	margin-bottom: 0;
+}
+.additionally-data{
+	margin-bottom: 30px;
+}
+.addit__input{
+	position: absolute;
+  	z-index: -1;
+  	opacity: 0;
+  	margin: 10px 0 0 7px;
+}
+.addit__label::before{
+	content: "";
+	width: 30px;
+	height: 30px;
+	display: block;
+	position: absolute;
+	top:0;
+	left: 0;
+	border:2px solid #e6e6e6;
+}
+.addit__label:hover::before{
+	border:2px solid #cdcdcd;
+}
+.addit__input + .addit__label{
+	cursor: pointer;
+}
+.addit__input:checked + .addit__label::after{
+	content: "";
+	width: 20px;
+	height: 18px;
+	background-image: url("../../../imgs/index/tick.png");
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: 50%;
+	display: block;
+	position: absolute;
+	top:8px;
+	left: 6px;
+}
+.addit__label:active,
+.addit__label:focus{
+	opacity: 0.6;
+}
+/* кнопка */
+.btn__wrapper{
+	text-align: center;
+	margin-bottom: 30px;
+}
+.fofm__button{
+	width: 100%;
+	border:none;
+	display: inline-block;
+	color:#fff;
+	margin-bottom: 25px;
+	outline: none;
+}
+.necessarily-text{
+	font-family: @arial;
+	font-size: 14px;
+	line-height: 16px;
+	text-transform: lowercase;
+}
+input[type=text]{
+	border:1px solid #f2f2f2;
+	box-sizing: border-box;
+	padding-left: 20px;
+}
+input[type=text]:hover{
+	border:1px solid #cdcdcd;
+	outline: none;
+	cursor: pointer;
+}
+input[type=text]:active,
+input[type=text]:focus{
+	border:1px solid #111111;
+	outline: none;
+}
+input[type=text]:invalid{
+	border:1px solid #ff8282;
+}
+@media all and (min-width: 768px){
+	/* блок с заголовком */
+	.selection__program-title{
+		font-size: 60px;
+		line-height: 60px;
+		margin-bottom: 50px;
+		margin-top: 0px;
+	}
+	.selection-dscr{
+		text-transform: uppercase;
+		font-size: 20px;
+		line-height: 30px;
+		width: 340px;
+		display: inline-block;
+		margin-bottom: 65px;
+		margin-left: 40px;
+	}
+	/* блок с данными кота */
+	.cat-info__wrapper{
+		min-width: 630px;
+		box-sizing: border-box;
+		padding-left: 30px;
+		padding-right: 30px;
+	}
+	.personal-cat-info{
+		margin-bottom: 40px;
+	}
+	.cat-info__list{
+		box-sizing: border-box;
+		padding: 0 40px;
+	}
+	.pers-dat__label{
+		font-size: 20px;
+		line-height: 20px;
+	}
+	.pers-dat__input{
+		font-size: 20px;
+		line-height: 20px;
+		padding-top: 10px;
+		padding-bottom: 10px;
+	}
+	/* блок с выбором направления */
+	.personal-cat__flex-row{
+		margin-bottom: 95px;
+	}
+	.personal-cat-vector{
+		border-top: none;
+		margin:0 auto;
+	}
+	.cat-data__radio-wrapper{
+		border: none;
+	}
+	.vector__list{
+		padding: 25px;
+		width: calc(100vw - 214px);
+		margin:0 auto;
+		border: 1px solid #e6e6e6
+	}
+	.vector__list-item{
+		margin-bottom: 12px;
+		padding-left: 65px;
+		position: relative;
+		height: 40px;
+		box-sizing: border-box;
+		padding-top: 12px;
+	}
+	.vector__list-item:last-child{
+		margin-bottom: 0px;
+	}
+
+	.vector__label::before{
+
+		width: 40px;
+		height: 40px;
+	}
+	.vector__input:checked + .vector__label::after{
+		width: 20px;
+		height: 20px;
+		top:12px;
+		left: 12px;
+	}
+	/* персональные данные владельца*/
+	.personal-owner__mini-title{
+	margin-bottom: 65px;
+	} 
+	.owner__list{
+		box-sizing: border-box;
+		padding: 0 40px;
+	}
+	.owner__list-item{
+		margin-bottom: 20px;
+	}
+	.owner-label{
+		margin-right:20px;
+		font-size: 20px;
+		line-height: 20px;
+		padding-top: 20px;
+	}
+	.owner-input{
+		font-size: 20px;
+		line-height: 20px;
+	}
+	/* комментарии */
+	.comments-field{
+		height: 170px;
+		padding: 25px;
+	}
+	.comments-data__mini-title{
+		margin-bottom: 65px;
+	}
+	/* дополнительно */
+	.additionally-data__mini-title{
+		margin-bottom: 65px;
+	}
+	.additionally__list{
+		display: flex;
+		justify-content: space-between;
+		flex-wrap: wrap;
+		box-sizing: border-box;
+		padding: 0 40px;
+	}
+	.additionally__list-item{
+		width: 50%;
+		margin-bottom: 30px;
+		position: relative;
+		box-sizing: border-box;
+		padding-left: 65px;
+		height: 42px;
+		box-sizing: border-box;
+		padding-top: 12px;
+	}
+	.additionally__list-item:last-child{
+		margin-bottom: inherit;
+	}
+	.additionally-data{
+		margin-bottom: 15px;
+	}
+	.addit__label::before{;
+		width: 40px;
+		height: 40px;
+	}
+	.addit__input:checked + .addit__label::after{
+		width: 20px;
+		height: 18px;
+		top:12px;
+		left: 12px;
+	}
+	.addit__label{
+		font-size: 20px;
+		line-height: 20px;
+	}
+	.btn__wrapper{
+		text-align: center;
+		margin-bottom: 30px;
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+		box-sizing: border-box;
+		padding:0 70px;
+	}
+	.fofm__button{
+		width: 282px;
+		margin-bottom: 0px;
+	}
+	.necessarily-text{
+		font-family: @arial;
+		font-size: 16px;
+		line-height: 16px;
+		text-transform: lowercase;
+	}
+	.btn{
+		font-size: 20px;
+		line-height: 20px;
+		padding-top: 15px;
+		padding-bottom: 15px;
+	}
+	/* карта */
+	.map__wrapper--form{
+		background-color: #f2f2f2;
+	}
+}
+@media all and (min-width: 1200px){
+	.selection-dscr{
+		margin-left: 0px;
+	}
+	// использование флекс контейнера
+	//для выравнивания флэкс эл.
+	.personal-cat__flex-row{
+		display: flex;
+		justify-content: space-between;
+		height: 200px;
+	}
+	/* информация про кота */
+	.personal-cat-info{
+		margin-left: auto;
+		margin-right: 40px;
+		margin-bottom: 0;
+	}
+	.cat-info__wrapper{
+		min-width: 570px;
+		box-sizing: border-box;
+		padding-left:0px;
+		padding-right: 0px;
+	}
+	.cat-info__list{
+		padding: 0;
+	}
+	.info__list-item{
+		margin-bottom: 20px;
+	}
+	.info__list-item:last-child{
+		margin-bottom: 0;
+	}
+	/* информация о направлении развития */
+	.personal-cat-vector{
+		margin-right: auto;
+		margin-left: 40px;
+	}
+	.vector__list{
+		width: 570px;
+		box-sizing: border-box;
+	}
+	/* инф. о хозяине */
+	.owner__list{
+		padding: 0;
+		display: flex;
+		justify-content: space-between;
+	}
+	.owner__list-item{
+		width: 570px;
+		margin-bottom: 0;
+	}
+	.owner-input{
+		padding-top: 10px;
+		padding-bottom: 10px;
+	}
+	/* дополнительно */
+	.additionally__list{
+		flex-wrap: nowrap;
+		padding: 0;
+	}
+	.additionally-data{
+		margin-bottom: 60px;
+	}
+	/* кнопка */
+	.btn__wrapper{
+		margin-bottom: 80px;
+		padding: 0 40px;
+	}
+	.fofm__button{
+		width: 570px;
+		margin-right: 80px;
+	}
+	.necessarily-text{
+		margin-right:auto;
+	}
+
+}

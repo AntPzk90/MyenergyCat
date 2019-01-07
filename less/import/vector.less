@@ -1,0 +1,214 @@
+.vector{
+	margin-bottom: 35px;
+}
+.slim-vector__wrapper,
+.pro-vector__wrapper{
+	box-sizing: border-box;
+	background-color: #f2f2f2;
+	padding: 20px;
+	padding-bottom: 30px;
+	margin-top: 22px;
+}
+.vector__title{
+	text-align: center;
+	font-weight: 400;
+	position: relative;
+	margin-bottom: 40px;
+	text-transform: uppercase;
+}
+.vector__title::after{
+	content:"";
+	display: block;
+	width: 51px;
+	height: 51px;
+	border-radius: 50%;
+	background-color: @green;
+	position: absolute;
+	top: -16px;
+	left: 0;
+}
+.slim-vector__wrapper .vector__title::before{
+	content:"";
+	display: block;
+	width: 35px;
+	height: 50px;
+	position: absolute;
+	top: -20px;
+	left: 10px;
+	background-image: url("../imgs/index/cat-slim.png");
+	background-repeat: no-repeat;
+	background-position: 50%;
+	background-size: cover;
+	z-index: 1;
+}
+.pro-vector__wrapper .vector__title::before{
+	content:"";
+	display: block;
+	width: 67px;
+	height: 28px;
+	position: absolute;
+	top: -5px;
+	left: -10px;
+	background-image: url("../imgs/index/cat-pro.png");
+	background-repeat: no-repeat;
+	background-position: 50%;
+	background-size: cover;
+	z-index: 1;
+}
+.vector__dscr{
+	padding-bottom: 20px;
+	font-family: @arial;
+	font-size: 14px;
+	line-height: 18px;
+	.bord-bot(#d9d9d9);
+}
+.vector-btn{
+	font-size: 16px;
+	line-height: 16px;
+	text-transform: uppercase;
+	color: #111111;
+	text-decoration: none;
+	position: absolute;
+}
+.vector-btn::after{
+	content:"";
+	display: block;
+	position: absolute;
+	top: 2.5px;
+	right: -37px;
+	height: 11px;
+	width: 25px;
+	background-image: url("../imgs/index/right-arrow-long.png");
+	background-position: 50%;
+	background-size: cover;
+	background-repeat: no-repeat;
+}
+.vector-btn:hover::after{
+	width: 33px;
+	right: -45px;
+	background-image: url("../imgs/index/right-arrow-verylong.svg.png");
+}
+.vector-btn:active,
+.vector-btn:focus{
+	opacity: 0.6;
+}
+.vector-btn:active::after,
+.vector-btn:focus::after{
+	width: 33px;
+	right: -45px;
+	background-image: url("../imgs/index/right-arrow-verylong.svg.png");
+}
+@media all and (min-width: 768px){
+	.vector{
+		margin-bottom: 45px;
+	}
+	.slim-vector__wrapper,
+	.pro-vector__wrapper{
+		padding: 50px;
+		padding-bottom: 60px;
+		padding-top: 75px;
+		padding-right: 315px;
+		margin-top: 30px;
+		position: relative;
+	}
+	.vector__title{
+		text-align: left;
+		font-weight: 400;
+		position: static;
+		font-size: 36px;
+		margin-bottom: 30px;
+		text-transform: uppercase;
+	}
+	.vector__dscr{
+		padding-bottom: 20px;
+		font-size: 16px;
+		line-height: 24px;
+		border-bottom: none;
+		margin-bottom: 40px;
+		width: 340px;
+	}
+	.vector-btn{
+		font-size: 20px;
+		line-height: 20px;
+		text-transform: uppercase;
+		color: #111111;
+		text-decoration: none;
+		position: absolute;
+	}
+	.vector-btn::after{
+		top: 4.5px;
+	}
+	.vector__title::after{
+		width: 201px;
+		height: 201px;
+		top: 50%;
+		margin-top: -100.5px;
+		left:100%;
+		margin-left: -251px;
+	}
+	.slim-vector__wrapper .vector__title::before{
+		width: 140px;
+		height: 194px;
+		background-image: url("../imgs/tablet/cat-slim.png");
+		top: 80px;
+		left: 100%;
+		margin-left: -235px;
+	}
+	.pro-vector__wrapper .vector__title::before{
+
+		width: 268px;
+		height: 112px;
+		background-image: url("../imgs/tablet/cat-pro.png");
+		top: 134px;
+		left: 100%;
+		margin-left: -300px;
+	}
+}
+@media all and (min-width: 1200px){
+	.vector__wrapper{
+		display: flex;
+		justify-content: space-between;
+	}
+	.slim-vector__wrapper,
+	.pro-vector__wrapper{
+		width: 570px;
+		padding-left: 52px;
+		padding-right: 52px;
+		padding-top:85px;
+		padding-bottom: 55px;
+	}
+	.vector__title{
+		margin-bottom: 80px;
+		text-align: center;
+		position: relative;
+		width: 100%;
+	}
+	.vector__dscr{
+		width: 100%;
+		margin-bottom: 15px;
+	}
+	.vector__title::after{
+		width: 101px;
+		height: 101px;
+		top: -32px;
+		margin-top:0px;
+		left:0px;
+		margin-left: 0px;
+	}
+	.slim-vector__wrapper .vector__title::before{
+		width: 72px;
+		height: 100px;
+		background-image: url("../imgs/tablet/cat-slim.png");
+		top: -40px;
+		left: 12px;
+		margin-left:0px;
+	}
+	.pro-vector__wrapper .vector__title::before{
+		width: 134px;
+		height: 56px;
+		background-image: url("../imgs/tablet/cat-pro.png");
+		top: -12px;
+		left: -20px;
+		margin-left: 0px;
+	}
+}

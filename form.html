@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>form</title>
+	<link rel="stylesheet" type="text/css" href="css/normalize.css">
+	<link rel="stylesheet" type="text/css" href="css/styles.css">
+</head>
+<body>
+	<div class="big-container big-container__form">
+		<header class="main__header form__hrader">
+			<div class="header__wrapper container">
+				<a href="index.html" class="logo header__logo">
+					<img src="imgs/index/logo-desktop.png" width="202" height="59" alt="logo" class="header__logo-img">
+					<img src="imgs/moby/logo-mobile.png" width="33" height="38" alt="logo-moby" class="header__logo-img-moby">
+				</a>
+
+				<img src="imgs/moby/logo-mobile-header.png" width="101" height="18" alt="logo-header-moby"
+					class="header__logo-txt-moby">
+
+				<nav class="navigation main__nav active--not">
+					<ul class="nav__list">
+						<li class="nav__list-item">
+							<a href="index.html" class="list-link">Главная</a>
+						</li>
+						<li class="nav__list-item">
+							<a href="#" class="list-link">Каталог продукции</a>
+						</li>
+						<li class="nav__list-item">
+							<a href="form.html" class="list-link link--active">Подбор программы</a>
+						</li>
+					</ul>
+				</nav>
+				<a href="#" class="byrger x">
+					<span class="burger-item"></span>
+					<span class="burger-item"></span>
+					<span class="burger-item"></span>
+				</a>
+			</div>
+		</header>
+
+		<main class="main__form">
+			<section class="selection__program">
+				<div class="big-title__wrapper container">
+					<h1 class="selection__program-title h1">
+						Пдбор программы</h1>
+					<span class="selection-dscr">
+						Заполните анкету и мы подберем 
+						программу питания для вашего кота
+					</span>
+				</div>
+				<div class="selection__form-wrapper">
+					<form class="selection__form">
+						<div class="personal-cat__flex-row">
+							<fieldset class="personal-cat-info fieldset">
+								<div class="cat-info__wrapper">
+								<ul class="cat-info__list">
+									<li class="info__list-item">
+										<label for="cat-name" class="pers-dat__label">
+												Имя*
+											</label>
+											<input type="text" name="cat-name" id="cat-name" class="pers-dat__input" placeholder="БАРСИК" required>
+										</li>
+										<li class="info__list-item">
+											<label for="cat-weight" class="pers-dat__label">
+													Вес(кг)*
+											</label>
+											<input type="text" name="cat-weight" id="cat-weight" class="pers-dat__input" placeholder="7" required>
+										</li>
+										<li class="info__list-item">
+											<label for="cat-age" class="pers-dat__label">
+													Возраст(лет)
+											</label>
+											<input type="text" name="cat-age" id="cat-age" class="pers-dat__input" placeholder="7" >
+										</li>
+									</ul>
+								</div>	
+							</fieldset>
+							<fieldset class="personal-cat-vector fieldset">
+								<div class="cat-data__radio-wrapper">
+									<ul class="vector__list">
+										<li class="vector__list-item">
+											<input type="radio" name="radio" id="slim" class="vector__input" checked>
+											<label for="slim" class="vector__label">
+												похудение
+											</label>
+										</li>
+										<li class="vector__list-item">
+											<input type="radio" name="radio" id="pro" class="vector__input">
+											<label for="pro" class="vector__label">
+												набор массы
+											</label>
+										</li>
+										<li class="vector__list-item">
+											<input type="radio" name="radio" id="advice" class="vector__input">
+											<label for="advice" class="vector__label">
+												Не знаю (нужен ваш совет)
+											</label>
+										</li>
+									</ul>
+								</div>
+							
+							</fieldset>
+						</div>
+						<fieldset class="personal-owner-data fieldset">
+							<div class="owner-data__wrapper container">
+								<legend class="personal-owner__mini-title">
+									Контактные данные(владельца кота)
+								</legend>
+								<div class="owner-data__wrapper">
+									<ul class="owner__list">
+										<li class="owner__list-item">
+											<label for="owner-name" class="owner-label">Email*</label>
+											<input type="text" name="owner-email" id="owner-name" class="owner-input"
+											placeholder="KUKLACHEV@GMAIL>COM" required>
+										</li>
+										<li class="owner__list-item">
+											<label for="owner-tel" class="owner-label">Телефон*</label>
+											<input type="text" name="owner-tel" id="owner-tel" class="owner-input" placeholder="+48000777777" required>
+										</li>
+									</ul>
+								</div>
+							</div>	
+						</fieldset>
+
+						<fieldset class="comments-data fieldset">
+							<div class="comments-data__wrapper container">
+								<legend class="comments-data__mini-title">
+									Комментарии
+								</legend>
+								<textarea class="comments-field" placeholder="РАССКАЖИТЕ ПРО ПОВАДКИ ВАШЕГО КОТА"></textarea>
+							</div>
+						</fieldset>
+
+						<fieldset class="additionally-data fieldset">
+							<div class="additionally-data__wrapper container">
+								<legend class="additionally-data__mini-title">
+									Дополнительно
+								</legend>
+								<ul class="additionally__list">
+									<li class="additionally__list-item">
+										<input type="checkbox" name="sweetener" id="sweetener" class="addit__input" checked>
+										<label for="sweetener" class="addit__label">
+											сахарозаменитель
+										</label>
+									</li>
+									<li class="additionally__list-item">
+										<input type="checkbox" name="water" id="water" class="addit__input">
+										<label for="water" class="addit__label">
+											питьевая вода
+										</label>
+									</li>
+									<li class="additionally__list-item">
+										<input type="checkbox" name="milk" id="milk" class="addit__input">
+										<label for="milk" class="addit__label">
+											молоко
+										</label>
+									</li>
+									<li class="additionally__list-item">
+										<input type="checkbox" name="vitamins" id="vitamins" class="addit__input">
+										<label for="vitamins" class="addit__label">
+											витамины
+										</label>
+									</li>
+								</ul>
+							</div>
+						</fieldset>
+
+						<div class="btn__wrapper container">
+						<button type="submit" class="fofm__button btn">
+							Отправить заявку
+						</button>
+						<span class="necessarily-text">
+							* - обязательно к заполнению
+						</span>
+						</div>
+					</form>
+				</div>
+			</section>
+
+			<section class="map">
+				<div class="map__wrapper map__wrapper--form container">
+
+					<div class="map__info">
+						<b class="diler__slogan">
+							Приглашаем к сотрудничеству диллеров
+						</b>
+						<div class="our-office">
+							<span class="address">
+							ул. Большая Конюшенная д. 19/8
+						</span>
+						<span class="town">
+							Санкт-Петербург
+						</span>
+						</div>
+					</div>
+					
+
+				</div>
+				<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.6036253002806!2d30.320858715677204!3d59.93871916905467!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca145cc1%3A0x42b32648d8238007!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LzgsINCh0LDQvdC60YIt0J_QtdGC0LXRgNCx0YPRgNCzLCDQoNC-0YHRgdC40Y8sIDE5MTE4Ng!5e0!3m2!1sru!2sua!4v1546774515319" width="100%" height="400" frameborder="0" style="border:0" allowfullscreen></iframe>
+			</section>
+
+		</main>
+		<footer class="main__footer">
+			<div class="footer__wrapper container">
+				<a href="#" class="footer__logo">
+					<img src="imgs/index/footer-logo.png" width="128" height="24" alt="footer-logo">
+				</a>
+
+				<ul class="social-list">
+					<li class="social-list-item">
+						<a href="#" class="social-link">
+							<svg xmlns="http://www.w3.org/2000/svg" width="26" height="15" viewBox="0 0 26 15" class="svg">
+								<path d="M16.138 11.51c.956-.309 2.18 2.04 3.483 2.939.978.681 1.727.534 1.727.534l3.473-.05s1.815-.112.957-1.554c-.071-.12-.503-1.069-2.585-3.022-2.177-2.043-1.882-1.712.739-5.244 1.597-2.153 2.236-3.468 2.036-4.028-.192-.539-1.365-.399-1.365-.399L20.69.713c-.381.001-.704.119-.851.515-.003.004-.621 1.666-1.445 3.079-1.741 2.989-2.436 3.148-2.724 2.961-.661-.433-.494-1.737-.494-2.664 0-2.897.432-4.105-.846-4.417-.427-.104-.739-.172-1.828-.182-1.392-.021-2.574 0-3.244.329-.445.223-.786.712-.579.74.26.035.843.16 1.155.586.401.552.389 1.789.389 1.789s.229 3.411-.54 3.834c-.528.29-1.25-.302-2.803-3.016-.793-1.388-1.392-2.922-1.392-2.922s-.116-.285-.326-.441c-.25-.185-.6-.244-.6-.244L.848.684S.29.7.085.946c-.182.218-.015.668-.015.668s2.909 6.881 6.203 10.347c3.02 3.182 6.452 2.971 6.452 2.971h1.555s.469-.054.709-.312c.224-.24.214-.691.214-.691s-.031-2.109.935-2.419z"/>
+							</svg>
+						</a>
+					</li>
+
+					<li class="social-list-item">
+						<a href="#" class="social-link">
+							<svg xmlns="http://www.w3.org/2000/svg" width="21" height="21" viewBox="0 0 21 21" class="svg">
+								<path d="M18 0H3C1.35 0 0 1.35 0 3v15c0 1.65 1.35 3 3 3h15c1.65 0 3-1.35 3-3V3c0-1.65-1.35-3-3-3zm-7.5 7c1.93 0 3.5 1.57 3.5 3.5S12.43 14 10.5 14 7 12.43 7 10.5 8.57 7 10.5 7zM18 18H3V9h1.181A6.504 6.504 0 0 0 4 10.5a6.5 6.5 0 1 0 13 0 6.45 6.45 0 0 0-.181-1.5H18v9zm0-11h-4V3h4v4z"/>
+							</svg>
+						</a>
+					</li>
+
+					<li class="social-list-item">
+						<a href="#" class="social-link">
+							<svg xmlns="http://www.w3.org/2000/svg" width="12" height="22" viewBox="0 0 12 22" class="svg">
+								<path d="M12 4V0H8a4 4 0 0 0-4 4v4H0v4h4v10h4V12h4V8H8V4h4z"/>
+							</svg>
+						</a>
+					</li>
+
+				</ul>
+				<a href="#" class="academy-link">
+					HTML Academy
+					<svg xmlns="http://www.w3.org/2000/svg" width="26.943" height="34.09" viewBox="0 0 26.943 34.09" class="svg"><path d="M13.62.017L13.472 0 0 1.412v24.661l13.473 8.017 13.43-7.99.042-.025V1.412L13.62.017zm11.399 12.11L13.495 5.334l-.001-.104-.087.05-.088-.056v.109L1.925 12.118V3.147l11.548-1.212L25.02 3.147v8.98zm-11.614-5.34L24.923 13.5l-4.479 2.64-7.093-4.221-.014 1.415 5.904 3.513-.86.507-5.03-2.992-.014 1.415 3.827 2.275-.782.523-3.031-1.787-.014 1.413 1.853 1.091-1.8 1.081-11.356-6.751 11.371-6.835zm-11.48 8.34l11.411 6.791.016 1.044-7.942-4.728-.015 1.416 7.979 4.795.018 1.076-7.973-4.74-.013 1.414 8.021 4.822.046.025 8.143-4.872-.011-5.177 3.415-2.036v10.021L13.472 31.85 1.925 24.979v-9.852z"/></svg>
+				</a>
+			</div>
+		</footer>
+	</div>
+</body>
+</html>

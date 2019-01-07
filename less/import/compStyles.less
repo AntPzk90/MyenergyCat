@@ -1,0 +1,84 @@
+.visually-hidden{
+    position: absolute !important;
+
+    overflow: hidden;
+    clip: rect(1px 1px 1px 1px); /* IE6, IE7 */
+    clip: rect(1px, 1px, 1px, 1px);
+
+    width: 1px !important;
+    height: 1px !important;
+    padding: 0 !important;
+
+    border: 0 !important;
+}
+.arial(){
+	font-family: @arial;
+	font-style: normal;
+	font-size: 16px;
+	line-height: 24px;
+	font-weight: 400;
+}
+.bord-bot(@color){
+	border-bottom: 1px solid @color;
+}
+ul{
+	list-style: none;
+}
+.h1,
+.h2,
+.h3{
+	font-family: @oswald;
+	font-weight: 400;
+}
+body{
+	background-color:#fff;
+	font-family: @oswald;
+	font-weight: 400;
+	color: #111111;
+}
+.container{
+	min-width: 280px;
+	max-width: 500px;
+	padding: 0 20px;
+	margin: 0 auto;
+}
+.big-container{
+	max-width: 500px;
+	margin: 0 auto;
+}
+@media all and (min-width: 768px){
+	.container{
+		min-width: 751px;
+		max-width: 1183px;
+		box-sizing: border-box;
+		padding: 0 30px;
+		margin: 0 auto;
+	}
+	.big-container{
+		max-width: 1100px;	
+		margin: 0 auto;
+	}	
+	.h1,
+	.h2{
+		font-size: 60px;
+		line-height: 60px;
+	}
+}
+@media all and (min-width: 1200px){
+	.container{
+		min-width: 1183px;
+		max-width: 1300px;
+		box-sizing: border-box;
+		padding: 0 40px;
+		margin: 0 auto;
+	}
+	.big-container{
+		max-width: 100vw;	
+		margin: 0 auto;
+		background-image: url("../../imgs/index/index-background-desktop.jpg");
+		background-size: 50% 695px;
+		background-position:100% 0px;
+		background-repeat: no-repeat;
+		z-index: -1;
+	}
+}
